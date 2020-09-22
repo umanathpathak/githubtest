@@ -1,0 +1,38 @@
+#!/bin/sh
+
+apt update
+apt upgrade
+apt install apache2
+apt install nginx
+
+systemctl start apache2
+systemctl start nginx
+
+unlink /etc/nginx/sites-enabled/default
+
+echo "Enter the .conf file name= "
+read filename
+
+touch > /etc/nginx/sites-available/$filename
+
+chmod 777 /etc/nginx/sites-available/$filename
+
+
+echo "server{
+
+listen 80;
+location / {
+proxy_pass http://127.0.0.1:81;
+  }
+}" > /etc/nginx/sites-available/$filename
+
+
+
+ln -s /etc/nginx/sites-available/$filename /etc/nginx/sites-enabled/$filename
+
+nginx -t
+
+
+systemctl restart apache2
+systemctl restart nginx
+
