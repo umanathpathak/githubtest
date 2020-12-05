@@ -1,0 +1,26 @@
+commit 352e49fbae49b120ce09e44da9c80bfce148e059
+Author: umanathpathak <umanath.pathak@yahoo.com>
+Date:   Tue Sep 22 18:31:12 2020 +0530
+
+    script for proxy pass in nginx
+
+ scriptforproxypass.txt | 38 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+
+commit 5897d6b5124da2c140dc93e9007c9e7f87f9c3a5
+Author: umanathpathak <umanath.pathak@yahoo.com>
+Date:   Sun Sep 13 18:01:23 2020 +0530
+
+    I added abc.txt
+
+ abc.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit f428b60c0411c961e39eb17be770cc37c3fdef65
+Author: umanathpathak <umanath.pathak@yahoo.com>
+Date:   Sun Sep 13 17:31:42 2020 +0530
+
+    first commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
