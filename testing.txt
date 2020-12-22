@@ -1,0 +1,1 @@
+This is a test file for checking if I am able to add any file to github repository using only Terminal and then verifying it on the git web page.
